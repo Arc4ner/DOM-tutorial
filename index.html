@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+    <div id="div1">
+<h1>Programming Languages</h1>
+<ul>
+<li>JavaScript</li>
+<li>Kotlin</li>
+<li>Swift</li>
+</ul>
+
+
+</div>
+<script>
+let languages = document.getElementsByTagName('li')
+console.log(languages)
+</script>
+
+
+<div id="div2">
+    <h1>Programming Languages</h1>
+    <ul class="p-languages">
+<li>JavaScript</li>
+<p>We can create interactive Websites using JavaScript</p>
+<li>Kotlin</li>
+<p>we can develop Android apps using Kotlin</p>
+<li>Swift</li>
+<p>we can develop iOS apps using Swift</p>
+    </ul>
+<script>
+    let text =document.querySelectorAll('.p-languages p')
+    console.log(text)
+</script>
+
+</div>
+
+<div id="div3">
+    <h1>Programming Languages</h1>
+    <ul class="list">
+    <li id="first-li">JavaScript</li>
+    <li id="second-li">Kotlin</li>
+    <li id="third-li">Swift</li>
+    </ul>
+    
+    <script>
+let android=document.querySelector('#second-li')
+android.innerText = "java"
+android.style.color = 'blue'
+android.style.background = 'black'
+android.style.textAlign = "center"
+
+
+let languageList = document.querySelector(".list")
+let ruby= document.createElement("li")
+ruby.innerText ="Ruby"
+languageList.append(ruby)
+console.log(languageList)
+let ios = document.getElementById('third-li')
+ios.remove()
+    </script>
+    
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
